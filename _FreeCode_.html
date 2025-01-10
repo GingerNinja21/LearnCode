@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <h1>_Learn<span>Code_</span></h1>
+        <header>Python Documentation</header>
+        <div id="nav-links-section">
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Getting_Started">Getting Started</a>
+            <a class="nav-link" href="#Basic_Syntax">Basic Syntax</a>
+            <a class="nav-link" href="#Advanced_Topics">Advanced Topics</a>
+            <a class="nav-link" href="#Conclusion">Conclusion</a>
+        </div>    
+    </nav>
+
+    <!-- Main Documentation -->
+    <main id="main-doc">
+        <div id="title">_Learn<span>Code_</span><h2>Python Documentation</h2></div>
+        <!-- Section 1 -->
+<hr>
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability. Designed to emphasize code clarity, Python allows developers to write clean, concise programs for both small scripts and large-scale applications.</p>
+            <p>
+                <h1>Key Features:</h1>
+                <ol id="key-features">
+                    <li><strong>Language:</strong> Code runs line by line without compilation, enabling quick testing and debugging.</li>
+                    <li><strong>Dynamically Typed:</strong> Variable types are determined at runtime, simplifying development.</li>
+                    <li><strong>Object-Oriented & Procedural:</strong> Supports multiple programming paradigms.</li>
+                    <li><strong>Extensible & Integrative:</strong> Python can be extended with C/C++ and integrates seamlessly with other languages.</li>
+                </ol>
+            </p>
+            <hr>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="Getting_Started" class="main-section">
+            <header class="main-sections">Getting Started</header>
+            <hr>
+            <p>To begin coding in Python, you need the right tools to set up your development environment:</p>
+            <ul>
+                <li><strong>Python Interpreter:</strong> Download and install the latest version of Python from the official Python website. Ensure python or python3 is added to your system PATH to run Python from the command line.</li>
+                <li><strong>Text Editor or IDE:</strong> Choose a code editor like Visual Studio Code, Sublime Text, or a full-fledged IDE like PyCharm for enhanced features like debugging, autocompletion, and project management.</li>
+                <li><strong>Command Line or Terminal:</strong> Use a terminal (Command Prompt, Bash, or PowerShell) to execute Python scripts by running python your_script.py.</li>
+                <li><strong>Virtual Environments:</strong> Set up virtual environments using venv or tools like pipenv to isolate project dependencies. This avoids conflicts when managing libraries across different projects.</li>
+                <li><strong>Package Manager (pip):</strong> Python’s built-in package manager pip allows you to install libraries and dependencies <code>pip install numpy</code></li>
+            </ul>
+        </section>
+        
+<hr>
+        <!-- Section 3 -->
+        <section id="Basic_Syntax" class="main-section">
+            <header class="main-sections">Basic Syntax</header>
+            <hr>
+            <p>Python’s syntax is designed to be simple and readable, making it one of the easiest programming languages to learn. Here are the key elements to get started:</p>
+            <h1>Indentation</h1>
+            <p>Python uses indentation to define blocks of code, such as in loops, conditionals, and functions. There are no braces {} or keywords like end—indentation is mandatory.</p>
+            <code>if 5 > 3:<br>print(<span class="string">"5 is greater than 3"</span>)  <span class="code-comment"># Indented block</span></code>
+            <h1>Comments</h1>
+            <p>Use the # symbol for single-line comments and triple quotes (''' or """) for multi-line comments.</p>
+            <code># This is a single-line comment <br>
+                <span class="code-comment">'''<br>This is a multi-line comment <br>
+                    spanning multiple lines.<br>'''</span></code>
+            <h1>Variables and Types</h1>
+            <p>No need to declare variable types explicitly—Python figures it out.</p>
+            <code>x = 10 <span class="code-comment">#Integer</span><br>
+                name = <span class="string">"John"</span>  <span class="code-comment">#String</span><br>
+                pi = 3.14 <span class="code-comment"># Float</span>
+                </code>
+            <h1>Printing Output</h1>
+            <p>Use the print() function to display text or variables.</p>
+            <code>print(<span class="string">"Hello, Python!"</span>)  
+            </code>
+            <h1>Input</h1>
+            <p>Get user input using the input() function.</p>
+            <code>name = input(<span>"Enter your name: "</span>)
+                print(f<span class="string">"Hello, <span style="color: red;">{name}</span>!"</span>)</code>
+            <h1>Simple Data Structures</h1>
+            <p>Python supports lists, tuples, and dictionaries right out of the box.</p>
+            <code><span class="code-comment"># List
+                <br>
+                <span style="color: black;">fruits =</span>  <span style="color: red;">["apple", "banana", "cherry"]</span>
+                <br>
+                <br>
+                # Dictionary
+                <br>
+                <span style="color: black;">person =</span>  <span style="color: red;">{"name": "John", "age": 25}</span></code>
+    </section>
+        
+<hr>
+        <!-- Section 4 -->
+        <section id="Advanced_Topics" class="main-section">
+            <header class="main-sections">Advanced Topics</header>
+            <hr>
+            <p>As you grow in Python expertise, dive into more challenging concepts to expand your capabilities:</p>
+            <ul>
+                <li><strong>Asynchronous Programming:</strong> Handle concurrent tasks efficiently using `async` and `await` keywords.</li>
+                <li><strong>Closures:</strong> Functions that retain access to variables from their containing scope.</li>
+                <li><strong>Decorators:</strong> Modify or extend functions and methods dynamically.</li>
+                <li><strong>Generators:</strong> Use `yield` to create iterators for large datasets with minimal memory usage.</li>
+            </ul>
+            <code>
+                <span class="string"># Example of a Python generator</span><br>
+                <span style="color: rgb(128, 0, 128);">def</span> <span style="color: rgb(255, 102, 0);">count_up_to(<span style="color: black;">n</span>)</span>:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = 1<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(255, 102, 0);">while</span> count <= n:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(255, 102, 0);">yield</span> count <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count += 1<br><br><span style="color: rgb(61, 117, 117);">for</span> num <span style="color: rgb(128, 0, 128)">in</span> <span style="color: rgb(255, 102, 0);">count_up_to(<span style="color: black;">5</span>)</span>:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(num)
+            </code>
+        </section>
+<hr>
+        <!-- Section 5 -->
+        <section id="Conclusion" class="main-section">
+            <header class="main-sections">Conclusion</header>
+            <hr>
+            <p>You've covered the essentials of Python programming. Now, it’s time to apply your knowledge to build meaningful projects and sharpen your skills:</p>
+            <ul>
+                <li>Experiment with Python's libraries and frameworks such as Django, Flask, or Pandas.</li>
+                <li>Contribute to open-source projects to collaborate and learn with the community.</li>
+                <li>Practice coding daily to stay sharp and gain expertise.</li>
+            </ul>
+            <p>With Python's versatility, the possibilities are endless. Get creative and push the limits of what you can build!</p>
+            <code>
+            <span class="code-comment"># Your journey begins</span><br>
+            print(<span class="string">"Congratulations on completing this guide!"</span>)
+            </code>
+            <br><br><br>
+            
+            <div class="reference">All documentation in this page is taken from <a href="https://www.w3schools.com/python/">W3Schools</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
