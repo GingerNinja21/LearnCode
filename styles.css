@@ -31,6 +31,10 @@ body {
 
   
 }
+#navbar header{
+    font-family: Verdana ,Helvetica, serif;
+    font-size: 14px
+}
 
 #navbar h1 {
     font-family: Helvetica, sans-serif;
